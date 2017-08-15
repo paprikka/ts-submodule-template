@@ -1,7 +1,7 @@
 {
-  "name": "@sonnet.io/example-ts-submodule",
+  "name": "@sonnet.io/kandu-notifier-client",
   "version": "0.0.1",
-  "description": "Example TS submodule",
+  "description": "Notifier service client for Kandu app",
   "main": "./dist/index.js",
   "files": [
     "dist/"
