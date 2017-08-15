@@ -1,0 +1,27 @@
+{
+  "name": "@sonnet.io/example-ts-submodule",
+  "version": "0.0.1",
+  "description": "Example TS submodule",
+  "main": "./dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "author": "Rafal Pastuszak <rafal.pastuszak@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "prepublishOnly": "yarn test && yarn build",
+    "deploy": "npm publish --access restricted",
+    "build": "rimraf dist/ && yarn tsc",
+    "test": "jest --forceExit --config=jest.config.unit.json",
+    "tdd": "jest --watch --config=jest.config.unit.json"
+  },
+  "dependencies": {
+    "typescript": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/jest": "20.0.2",
+    "jest": "^20.0.4",
+    "rimraf": "^2.6.1",
+    "ts-jest": "20.0.7"
+  }
+}
